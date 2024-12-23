@@ -8,8 +8,11 @@
 .navbar {
     background-color: #DAB1DA;
     height: 65px;
+    width: 100%;
     padding-left: 10px;
     padding-top: 10px;
+    position: fixed;
+    border-bottom: 1.5px solid black;
 }
 
 .navdiv{
@@ -35,6 +38,11 @@
     text-decoration: none;
     margin-right: 20px;
     font-weight: bold;
-
 }
 
+@media screen and (max-width: 768px) {
+    .navdiv a {
+        margin-right: 10px;
+        font-size: 14px;
+    }
+}
