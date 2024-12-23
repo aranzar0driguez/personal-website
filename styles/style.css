@@ -42,7 +42,7 @@
 
 @media screen and (max-width: 768px) {
     .navdiv a {
-        margin-right: 10px;
-        font-size: 14px;
+        margin-right: clamp(10px, 2vw, 20px);
+        font-size: clamp(14px, 2vw, 20px); /* Shrinks and grows based on viewport width */
     }
 }
