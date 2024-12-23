@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #DAB1DA;
+    height: 65px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.navdiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.navdiv li {
+    list-style: none;
+    display: inline-block;
+}
+
+.navdiv a {
+    color: black;
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: bold;
+
+}
+
