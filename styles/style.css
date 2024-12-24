@@ -3,16 +3,26 @@
     font-family: "Sora", serif;
     margin: 0;
     padding: 0;
+    border: none;
     --background-color: #DAB1DA
 }
 
-.navbar {
+body {
+    width: 100%;
+    height: 100vh;
     background-color: var(--background-color);
+    overflow-x: hidden;
+}
+
+
+.navbar {
     height: 65px;
     width: 100%;
     padding-left: 10px;
     padding-top: 10px;
     position: fixed;
+    background-color: var(--background-color);
+
 }
 
 .navdiv{
@@ -36,20 +46,35 @@
 .navdiv a {
     color: black;
     text-decoration: none;
-    margin-right: 20px;
+    margin-right: clamp(0px, 5vw, 50px);
+    font-size: clamp(15px, 1.5vw, 20px);
+    transition: 0.3s ease;
     font-weight: bold;
+    
 }
 
-.main-first-section {
-    background-color: var(--background-color);
-    width: 100%;
-    height: 80vh;
-    border-bottom: 2px solid black;
+.navdiv a:hover, .navdiv a.active {
+    color: white;
+    border-bottom: 3px solid white;
 }
 
-@media screen and (max-width: 768px) {
-    .navdiv a {
-        margin-right: clamp(10px, 2vw, 20px);
-        font-size: clamp(14px, 2vw, 20px); /* Shrinks and grows based on viewport width */
+
+
+@media (max-width: 1920px) {
+    .main-first-section {
+        height: 80vh;
     }
 }
+
+@media (max-width: 768px) {
+    .main-first-section {
+        height: 70vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-first-section {
+        height: 60vh;
+    }
+}
+
