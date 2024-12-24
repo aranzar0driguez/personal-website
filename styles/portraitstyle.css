@@ -2,13 +2,38 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 8rem;
+    gap: 10rem;
     margin: 0 auto;
+    padding-top: 75px;
 }
 
 .home-content h1{
     font-size: 6rem;
     line-height: 1.3;
+
+}
+
+.home-content {
+    max-width: 60vh;
+}
+
+.home-img-container {
+    width: 50vh;
+    height: auto;
+    position: relative; /* Moves an element from its original position while leaving other elements in place */
+    margin-top: 10px;
+}
+
+.circle-1 {
+    width: 60vh; /* Set size for the circle */
+    height: 75vh; /* Use the same value as width for a perfect circle */
+    border: 1.5px solid black;
+    border-radius: 50%; /* Make it circular */
+    position: absolute; /* Allow positioning */
+    top: 50%; /* Center vertically in parent */
+    left: 50%; /* Center horizontally in parent */
+    transform: translate(-50%, -50%); /* Align the circle's center with parent's center */
+    z-index: -1; /* Ensure it appears behind .home-img */
 }
 
 .home-img {
@@ -18,7 +43,7 @@
 
 .home-img img{
     position: relative;
-    width: 32vh;
+    width: 55vh;
     border-radius: 50%;
 }
 
@@ -26,16 +51,13 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 4rem;
-    height: 4rem;
     background-color: transparent;
-    border: 0.2rem solid black;
     color: black;
     text-decoration: none;
     border-radius: 50%;
-    font-size: clamp(15px, 1.5vw, 20px);
-    margin-right: 1.5rem;
-    margin-top: 1.05rem;
+    font-size: clamp(25px, 3vw, 50px);
+    margin-right: 0.9vw;
+    margin-top: 0.9vw;
     transition: 0.3s ease;
 }
 
