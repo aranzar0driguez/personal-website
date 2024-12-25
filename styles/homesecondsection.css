@@ -1,11 +1,11 @@
 .home-second-section {
     background-color: black;
-    width: 100%;
+    width: 100vw;
     text-align: center;
 }
 
 .home-second-section h2{
-    font-size: clamp(30px, 5.5vw, 65px);;
+    font-size: clamp(25px, 4.5vw, 55px);;
     color: white;
     margin: 0 auto;
     padding-top: 30px;
@@ -86,7 +86,7 @@
 
 @media(max-width: 526px){
     .home-second-section {
-        height: 160vh;
+        height: 163vh;
     }
 }
 
