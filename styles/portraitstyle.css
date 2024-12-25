@@ -86,4 +86,16 @@
 }
 
 
+@media(max-width: 1000px) {
+    .home-first-section {
+        gap: 4rem;
+    }   
+}
 
+@media(max-width: 995px) {
+    .home-first-section {
+        flex-direction: column;
+        padding:  32rem 2rem;
+    }
+    
+}
