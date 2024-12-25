@@ -1,0 +1,65 @@
+.home-second-section {
+    background-color: black;
+    width: 100%;
+    height: 85vh;
+    text-align: center;
+}
+
+.home-second-section h2{
+    font-size: clamp(27px, 6.5vw, 70px);;
+    color: white;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; /*aligns along the center of the screen*/
+    align-items: center; /*alings items in the center of their container*/
+    margin: 0 auto;
+    gap: 5vw;
+
+}
+
+.home-gallery-item {
+    width: 22vw;
+    min-width: 250px;
+    height: 22vh;
+    min-height: 44vh;
+
+}
+
+.gallery img {
+    /*flex: 1 1 auto;*/
+    width: 200px;
+    height: 200px;
+    padding: 20px 20px;
+    object-fit: contain; /* similar to scaledtofit() in swift */
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+.gallery #frenz {
+    background-color: black;
+}
+
+.gallery #pickpackgo {
+    background-color: red;
+}
+
+.gallery figcaption{
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+
+}
+
+.gallery p {
+    color: white;
+    width: 100%;
+    margin: 0 auto;
+}

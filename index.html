@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/portraitstyle.css">
+    <link rel="stylesheet" href="styles/homesecondsection.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,15 +28,16 @@
     </nav>
 
     <main>
-        <section class="home-first-section">
+        <section class="home-first-section floating-item">
         <div class="home-img-container">
             <div class="circle-1"></div>
             <div class="home-img">
                 <img src="/images/main-page-portrait.jpg" alt="portrait.img">
             </div>
+            <div class="circle-2"></div>
         </div>
         <div class="home-content">
-            <h1>Hey!</h1>
+            <h1>¡Hola!</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris 
@@ -45,16 +47,39 @@
                  in culpa qui officia deserunt mollit anim id est laborum.
             </p>
             <div class="social-icons">
-                <a href="https://www.instagram.com/alpaca.qween"><i class="fa-brands fa-instagram"></i></a>
-                <a href="www.linkedin.com/in/aranza-rodriguez"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/aranzar0driguez"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.youtube.com/@lunazigma3535"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.instagram.com/alpaca.qween" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="www.linkedin.com/in/aranza-rodriguez/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/aranzar0driguez" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.youtube.com/@lunazigma3535" target="_blank"><i class="fa-brands fa-youtube"></i></a>
 
             </div>
         </div>
             
         </section>
-        <section class="main-second-section"></section>
+
+        <section class="home-second-section">
+            <h2>Recent Projects</h2>
+            <div class="gallery">
+                <div class="home-gallery-item">
+                    <img id="frenz" src="/images/heart.png" alt="portrait.img">
+                    <figcaption>Frenz</figcaption>
+                    <p>Frenz is a Yalies-only dating/friend making app that utilizes <span>Swift</span> and <span>Typescript</span> and Firebase as the backend.</p>
+                </div>
+                <div class="home-gallery-item">
+                    <img id="pickpackgo" src="/images/pickpackgologo.png" alt="portrait.img">
+                    <figcaption>PickPackGo</figcaption>
+                    <p>PickPackGo is an app that lets users send their packages to a local business at affordable rates.</p>
+
+                </div>
+                <div class="home-gallery-item">
+                    <img id="pirx" src="/images/heart.png" alt="portrait.img">
+                    <figcaption>Pirx</figcaption>
+                    <p>Pirx allows users to post/see events that are currently happening around New Haven.</p>
+
+                </div>
+
+            </div>
+        </section>
 
     </main>
 </body>

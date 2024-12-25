@@ -5,45 +5,63 @@
     gap: 10rem;
     margin: 0 auto;
     padding-top: 75px;
+    height: 85vh;
+    border-bottom: 2px solid black;
 }
 
 .home-content h1{
-    font-size: 6rem;
+    font-size: clamp(30px, 7.5vw, 90px);;
     line-height: 1.3;
 
 }
 
+.home-content p {
+    font-size: clamp(12px, 1.5vw, 16.5px);
+    width: 90%;
+}
+
 .home-content {
-    max-width: 60vh;
+    max-width: 70vh;
 }
 
 .home-img-container {
-    width: 50vh;
+    min-width: 250px;
+    max-width: 350px;
     height: auto;
     position: relative; /* Moves an element from its original position while leaving other elements in place */
     margin-top: 10px;
 }
 
 .circle-1 {
-    width: 60vh; /* Set size for the circle */
-    height: 75vh; /* Use the same value as width for a perfect circle */
-    border: 1.5px solid black;
-    border-radius: 50%; /* Make it circular */
+    width: 120%; 
+    height: 100%;
+    border: 1.5px solid white;
+    border-radius: 50%; 
     position: absolute; /* Allow positioning */
     top: 50%; /* Center vertically in parent */
     left: 50%; /* Center horizontally in parent */
-    transform: translate(-50%, -50%); /* Align the circle's center with parent's center */
-    z-index: -1; /* Ensure it appears behind .home-img */
-}
+    transform: translate(-55%, -50%); /* Align the circle's center with parent's center */
+    z-index: -2; /* Ensure it appears behind .home-img */
+    background-color: black;
+} 
 
-.home-img {
-    border-radius: 50%;
-    
-}
+.circle-2 {
+    width: 110%; 
+    height: 100%;
+    border: 1.5px solid black;
+    border-radius: 50%; 
+    position: absolute; /* Allow positioning */
+    top: 50%; /* Center vertically in parent */
+    left: 50%; /* Center horizontally in parent */
+    transform: translate(-40%, -45%); /* Align the circle's center with parent's center */
+    z-index: -2; /* Ensure it appears behind .home-img */
+    background-color: white;
+} 
 
 .home-img img{
     position: relative;
-    width: 55vh;
+    z-index: -1;
+    width: 100%;
     border-radius: 50%;
 }
 
@@ -66,4 +84,6 @@
     border-color: white;
     transform: scale(1.1) translateY(-5px);
 }
+
+
 

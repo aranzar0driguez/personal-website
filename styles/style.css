@@ -22,6 +22,7 @@ body {
     padding-top: 10px;
     position: fixed;
     background-color: var(--background-color);
+    z-index: 2;
 
 }
 
@@ -58,7 +59,21 @@ body {
     border-bottom: 3px solid white;
 }
 
+.floating-item {
+    animation: floatIn 1s ease-out forwards;
+    opacity: 0;
+}
 
+@keyframes floatIn {
+    0% {
+      transform: translateY(50px); /* Starts slightly off-screen */
+      opacity: 0; /* Fully transparent */
+    }
+    100% {
+      transform: translateY(0); /* Moves to its final position */
+      opacity: 1; /* Fully visible */
+    }
+  }
 
 @media (max-width: 1920px) {
     .main-first-section {
