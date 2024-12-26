@@ -25,9 +25,13 @@ shared-navbar .navdiv a {
 
 .coding-projects-section {
     width: 100%;
-    height: 110vh;
+    /*height: 210vh;*/
+    height: auto;
+    padding-bottom: 7rem;
     background-color: black;
     text-align: center;
+    border-bottom: 3px solid white;
+
 }
 
 .coding-projects-section h1 {
@@ -35,27 +39,30 @@ shared-navbar .navdiv a {
     padding-top: 100px;
     color: white;
     font-size: clamp(30px, 3.5vw, 40px);
+    
 }
 
-.frenz-section {
+.project-section {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     gap: 5vw;
     padding-top: clamp(25px, 5.0vw, 100px);
+    padding-bottom: clamp(25px, 3.0vw, 50px);
+
 }
 
-.frenz-writing {
-    width: 40vw;
+.project-writing {
+    width: 45vw;
     height: auto;
-    padding-left: 30px; 
+    padding-left: 10vw; 
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.frenz-writing header {
+.project-writing header {
     text-align: left;
     font-weight: bold;
     color: white;
@@ -64,42 +71,88 @@ shared-navbar .navdiv a {
 
 }
 
-.frenz-section p {
+.project-section p {
     color: white;
     text-align: left;
-    font-size: clamp(13px, 1.4vw, 17px);
+    font-size: clamp(13px, 1.4vw, 16px);
 
 }
 
-.frenz-img {
+.project-section u {
+    color: white;
+}
+
+.project-img {
     width: 35vw; 
     height: auto;
     text-align: left;
+    position: relative;
 }
 
-.frenz-img img{
+
+
+.project-img div {
+    width: 120px;
+    height: 30px;
+    background-color: black;
+    box-shadow: 3.5px 3.5px white;
+    border: 1px solid white;
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-img p {
+    font-size: 12px;
+}
+
+.project-img img{
     width: 100%;
     min-width: 250px;
     max-width: 350px; 
     height: auto;
-    border: 1.5px solid white;
-    border-radius: 5%;
+    border: 1px solid white;
+    box-shadow: 6px 8px white;
+   
+
 }
 
+.marketing-projects-section {
+    width: 100%;
+    height: 100vh; /* change this later to auto */
+    padding-bottom: 7rem;
+    background-color: var(--background-color);
+    text-align: center;
+}
+
+.marketing-projects-section h2 {
+    margin: 0 auto;
+    padding-top: 50px;
+    color: back;
+    font-size: clamp(30px, 3.5vw, 40px);
+}
+
+
 @media (max-width: 550px){
-    .frenz-section {
+    .project-section {
         flex-direction: column;
         align-items: center;
+
     }
 
-    .frenz-writing {
+    .project-writing {
         width: 100vw;
         padding-right: 30px;
     }
-    .frenz-img {
+    .project-img {
         width: 55vw;
         margin: 0 auto;
         text-align: center;
     }
+  
 }
 
