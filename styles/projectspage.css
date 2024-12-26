@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+    font-family: "Sora", serif;
+    margin: 0;
+    padding: 0;
+    border: none;
+    --background-color: #DAB1DA
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: white;
+}
+
+#projects-page {
+    background-color: black;
+}
+
+shared-navbar .navdiv a {
+    color: white;
+    
+}
+
+.coding-projects-section {
+    width: 100%;
+    height: 110vh;
+    background-color: black;
+    text-align: center;
+}
+
+.coding-projects-section h1 {
+    margin: 0 auto;
+    padding-top: 100px;
+    color: white;
+    font-size: clamp(30px, 3.5vw, 40px);
+}
+
+.frenz-section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5vw;
+    padding-top: clamp(25px, 5.0vw, 100px);
+}
+
+.frenz-writing {
+    width: 40vw;
+    height: auto;
+    padding-left: 30px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.frenz-writing header {
+    text-align: left;
+    font-weight: bold;
+    color: white;
+    font-size: clamp(25px, 2.7vw, 30px);
+    padding-bottom: 10px;
+
+}
+
+.frenz-section p {
+    color: white;
+    text-align: left;
+    font-size: clamp(13px, 1.4vw, 17px);
+
+}
+
+.frenz-img {
+    width: 35vw; 
+    height: auto;
+    text-align: left;
+}
+
+.frenz-img img{
+    width: 100%;
+    min-width: 250px;
+    max-width: 350px; 
+    height: auto;
+    border: 1.5px solid white;
+    border-radius: 5%;
+}
+
+@media (max-width: 550px){
+    .frenz-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .frenz-writing {
+        width: 100vw;
+        padding-right: 30px;
+    }
+    .frenz-img {
+        width: 55vw;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
