@@ -43,14 +43,13 @@
 
                 <script>
                     document.addEventListener("DOMContentLoaded", () => {
-                        // Mapping of buttons to YouTube video URLs
+
                         const videoMap = {
                             "vid-1": "https://www.youtube.com/embed/LMuDrj5BpM0",
                             "vid-2": "https://www.youtube.com/embed/8Bpj0vydr7A&ab",
                             "vid-3": "https://www.youtube.com/embed/LMuDrj5BpM0",
                         };
                 
-                        // Reference the .vid div
                         const videoDiv = document.querySelector(".vid");
                 
                         // Function to update the iframe
@@ -78,6 +77,21 @@
                             });
                         });
                     });
+
+
+                    const buttons = document.querySelectorAll('.timeframes-column button');
+                    
+                    buttons.forEach(button => {
+                        button.addEventListener('click', () => {
+                            
+                        // Remove the active class from all buttons
+                        buttons.forEach(btn => btn.classList.remove('active'));
+
+                        // Add the active class to the clicked button
+                        button.classList.add('active');
+                        });
+                    });
+
                 </script>
             </div>
         </section>
