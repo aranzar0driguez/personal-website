@@ -16,7 +16,7 @@
 }
 
 .home-content p {
-    font-size: clamp(12px, 1.5vw, 16.5px);
+    font-size: clamp(12px, 1.5vw, 15.5px);
     width: 90%;
 }
 
@@ -25,10 +25,10 @@
 }
 
 .home-img-container {
-    width: clamp(230px, 25vw, 350px);
+    width: clamp(230px, 25vw, 325px);
     height: auto;
     position: relative; /* Moves an element from its original position while leaving other elements in place */
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 .circle-1 {
@@ -94,7 +94,10 @@
 @media(max-width: 995px) {
     .home-first-section {
         flex-direction: column;
-        padding:  25rem 2rem;
+        padding-top: 25rem;
+        padding-bottom: 20rem;
+        padding-left: 3.5rem;
+        padding-right: 2rem;
     }
     
 }
