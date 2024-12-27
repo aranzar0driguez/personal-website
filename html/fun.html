@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun</title>
+
+    
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/chinese-stuff.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet"></head>
+</head>
+<body>
+    <shared-navbar id="projects-page"></shared-navbar>
+    <script src="../assetsjs/elements.js"></script>
+
+    <main>
+        <section class="chinese-stuff">
+            <h1>Watch my Mandarin Chinese learning progress.</h1>
+
+            <div class="learning-journey-section">
+                <div class="timeframes-column">
+                    <button class="vid-1">
+                        <p class="date">Feb. 2nd, 2018</p>
+                        <p>Had just begun learning it!</p>
+
+                    </button>
+                    <button class="vid-2">
+                        <p class="date">Aug. 4th, 2018</p>
+                        <p>Seven months into my journey</p>
+
+                    </button>
+                    <button class="vid-3">
+                        <p class="date">Feb. 24th, 2019</p>
+                        <p>A year after</p>
+
+                    </button>
+
+                </div>
+
+                <div class="vid"></div>
+
+                <script>
+                    document.addEventListener("DOMContentLoaded", () => {
+                        // Mapping of buttons to YouTube video URLs
+                        const videoMap = {
+                            "vid-1": "https://www.youtube.com/embed/LMuDrj5BpM0",
+                            "vid-2": "https://www.youtube.com/embed/8Bpj0vydr7A&ab",
+                            "vid-3": "https://www.youtube.com/embed/LMuDrj5BpM0",
+                        };
+                
+                        // Reference the .vid div
+                        const videoDiv = document.querySelector(".vid");
+                
+                        // Function to update the iframe
+                        const updateVideo = (videoUrl) => {
+                            // Create or update the iframe
+                            videoDiv.innerHTML = `
+                                <iframe 
+                                    width="100%" 
+                                    height="100%" 
+                                    src="${videoUrl}" 
+                                    frameborder="0" 
+                                    allow="autoplay; encrypted-media" 
+                                    allowfullscreen>
+                                </iframe>
+                            `;
+                        };
+                
+                        // Add event listeners to buttons
+                        document.querySelectorAll(".timeframes-column button").forEach(button => {
+                            button.addEventListener("click", () => {
+                                const videoKey = button.classList[0]; // e.g., "vid-1"
+                                if (videoMap[videoKey]) {
+                                    updateVideo(videoMap[videoKey]);
+                                }
+                            });
+                        });
+                    });
+                </script>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
+
+<!-- Your comment here 
+ 
+1 - Learning chiense experience 
+(you can click and view different videos)
+2 - Chinese lion dance/rap
+(you see the )
+3 - Music I've been listening to 
+
+-->
+
+
+

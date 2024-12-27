@@ -1,0 +1,81 @@
+* {
+    font-family: "Sora", serif;
+    margin: 0;
+    padding: 0;
+    border: none;
+
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    padding-bottom: 7rem;
+}
+
+.chinese-stuff {
+    width: 100%;
+    height: 100vh;/*change this to auto*/
+    background-color: pink;
+    padding-top: clamp(70px, 7.5vw, 80px);
+    padding-left: 15vw;
+
+
+}
+
+.chinese-stuff h1{
+    font-size: 20px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.learning-journey-section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    border: 1px solid white;
+}
+
+.timeframes-column {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: auto;
+    border: 1px solid white;
+    background-color: white;
+}
+
+.timeframes-column button {
+    width: 350px;
+    height: 80px;
+    border: 1px solid white;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    background-color: pink;
+    transition: transform 0.3s ease;
+
+}
+
+.timeframes-column button:focus {
+    transform: translate(10px, -10px);
+}
+
+.timeframes-column .date {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.timeframes-column p:not(.date) {
+    font-size: 0.95rem;
+}
+
+.learning-journey-section .vid {
+    width: 40vw;
+    height: 250px;
+    border: 1px solid white;
+}
+
