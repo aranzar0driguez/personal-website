@@ -50,7 +50,6 @@ shared-navbar .navdiv a {
     gap: 5vw;
     padding-top: clamp(25px, 5.0vw, 100px);
     padding-bottom: clamp(25px, 3.0vw, 50px);
-
 }
 
 .project-writing {
@@ -84,12 +83,12 @@ shared-navbar .navdiv a {
 
 .project-img {
     width: 35vw; 
+    min-width: 300px;
+    max-width: 350px; 
     height: auto;
     text-align: left;
     position: relative;
 }
-
-
 
 .project-img div {
     width: 120px;
@@ -108,12 +107,13 @@ shared-navbar .navdiv a {
 
 .project-img p {
     font-size: 12px;
+    margin: 0;
+    padding: 0;
 }
 
 .project-img img{
     width: 100%;
-    min-width: 250px;
-    max-width: 350px; 
+    
     height: auto;
     border: 1px solid white;
     box-shadow: 6px 8px white;
@@ -123,19 +123,71 @@ shared-navbar .navdiv a {
 
 .marketing-projects-section {
     width: 100%;
-    height: 100vh; /* change this later to auto */
+    height: auto; /* change this later to auto */
     padding-bottom: 7rem;
-    background-color: var(--background-color);
+    background-color: rgb(71, 56, 98);
     text-align: center;
-}
+    
+}   
 
 .marketing-projects-section h2 {
     margin: 0 auto;
     padding-top: 50px;
-    color: back;
+    padding-bottom: 40px;
+    color: white;
     font-size: clamp(30px, 3.5vw, 40px);
+
 }
 
+.marketing-projects-section .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4rem;
+    width: 100%;
+}
+
+.marketing-cell {
+    min-width: 265px;
+    width: 21vw;
+    margin: 0 1vw;
+}
+
+.marketing-cell img {
+    min-width: 265px;
+    width: 100%;
+    aspect-ratio: 3 / 2; /* 30vw:20vw ratio */
+    object-fit: cover; /* Or contain */
+    border-radius: 6%;
+}
+
+.proj-date {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.proj-date figcaption {
+    text-align: left;
+    padding-right: 10px;
+    color: white;
+
+}
+
+.proj-date div {
+    flex-grow: 1; 
+    height: 1px;
+    background-color: white; 
+}
+
+.marketing-cell h1, p{
+    color: white;
+    text-align: left;
+    padding-top: 15px;
+}
 
 @media (max-width: 550px){
     .project-section {
@@ -153,6 +205,17 @@ shared-navbar .navdiv a {
         margin: 0 auto;
         text-align: center;
     }
-  
 }
 
+@media (max-width: 639px) {
+    .marketing-projects-section .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+    .marketing-cell {
+        width: 70vw;
+    }
+    .marketing-cell img {
+        width: 100%;
+    }
+}
