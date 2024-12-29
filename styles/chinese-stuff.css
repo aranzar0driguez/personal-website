@@ -32,9 +32,15 @@ shared-navbar .navdiv a {
 
 .chinese-stuff h1{
     font-size: clamp(15px, 1.7vw, 20px);
-    padding-bottom: 30px;
-    padding-top: 30px;
+    margin-bottom: 30px;
+    margin-top: 30px;
     color: white;
+}
+
+.chinese-rap-dance-row h1 {
+    color: black;
+    width: fit-content;
+    background-color: white;
 }
 
 .learning-journey-section {
@@ -172,11 +178,13 @@ shared-navbar .navdiv a {
     }
 
     .chinese-stuff h1{
+        background-color: transparent;
+        color: white;
         width: 100vw;
         font-size: 1.2rem;
         text-align: center;
-        padding-top: 50px;
-        padding-bottom: 30px;
+        margin-top: 50px;
+        margin-bottom: 30px;
     }
 
     .chinese-rap-dance-row {

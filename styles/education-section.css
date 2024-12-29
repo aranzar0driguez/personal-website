@@ -1,3 +1,110 @@
 .university-section {
     padding-top: 70px;
+    width: 100%;
+    height: auto; 
+    padding-bottom: 7vh;
+    
+}
+
+.university-row {
+    display: flex;
+    flex-direction: row;
+    padding-top: 40px;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    gap: 3vw;
+}
+
+.description{
+    width: 55%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 17vw;
+    padding-right: 2vw;
+}
+
+h1 {
+    font-size: clamp(25px, 30vw, 35px);
+    background-color: white;
+    width: fit-content;
+    margin-bottom: 10px;
+}
+
+.grad-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height: auto;
+    /*border: 1px solid black;*/
+}
+
+.grad-img img {
+    border-radius: 50%;
+    box-shadow: 20px 20px rgb(116, 67, 103);
+    width: clamp(275px, 32vw, 350px);
+    /*min-width: 350px;*/
+    height: auto;
+}
+
+.awards-section {
+    width: 100%;
+    height: 90vh;
+    background-color: black;
+    text-align: center;
+}
+
+h2 {
+    color: white;
+    padding-top: 30px;
+    font-size: 50px;
+    padding-bottom: 15px;
+}
+
+.awards-gallery {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3vw;
+}
+
+.award {
+    width: 30vw;
+    height: clamp(200px, 225vw, 250px);
+    
+}
+
+img {
+    width: 90%;
+    height: 90%;
+    border-radius: 5%;
+    border: 1px solid white;
+    object-fit: cover;
+}
+
+h3 {
+    padding-top: 20px;
+    color: white;
+}
+@media (max-width: 800px) {
+    .university-row {
+        flex-direction: column-reverse;
+    }
+
+    .grad-img {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 5vh;
+    }
+
+    .description {
+        width: 100%;
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
 }
