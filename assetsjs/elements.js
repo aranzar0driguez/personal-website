@@ -7,7 +7,7 @@ class SharedNavbar extends HTMLElement {
             <ul>
                 <li><a href="#">About Me</a></li>
                 <li><a href="../html/projects.html">Projects</a></li>
-                <li><a href="#">Experience</a></li>
+                <li><a href="../html/education.html">Education</a></li>
                 <li><a href="../html/fun.html">Fun</a></li>
             </ul>
         </div>
