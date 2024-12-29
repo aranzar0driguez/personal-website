@@ -1,0 +1,40 @@
+.fun-second-section {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.bucket-list {
+    background-color: black;
+    width: 50%;
+    height: 100%; /*change to auto*/
+}
+
+ul {
+    text-align: left;
+    padding-left: 6vw;
+    padding-right: 5vw;
+    list-style-type: none;
+}
+
+.learning-tools {
+    width: 50%;
+    background-color: white;
+}
+
+.learning-tools h2 {
+    color: black;
+}
+
+h2 {
+    text-align: center;
+    padding-bottom: 25px;
+    color: white;
+    padding-top: 30px;
+    font-size: clamp(30px, 3.5vw, 40px);
+}
+
+li {
+    color: white;
+}

@@ -108,6 +108,13 @@ h3 {
 
 }
 
+.third-section {
+    width: 100%;
+    text-align: center;
+    height: 10vh;
+    margin: 10px auto;
+}
+
 @media (max-width: 800px) {
     .university-row {
         flex-direction: column-reverse;

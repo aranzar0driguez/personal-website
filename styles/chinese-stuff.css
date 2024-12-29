@@ -40,6 +40,7 @@ shared-navbar .navdiv a {
 .chinese-rap-dance-row h1 {
     color: black;
     width: fit-content;
+    font-size: clamp(20px, 2.2vw, 25px);
     background-color: white;
 }
 
