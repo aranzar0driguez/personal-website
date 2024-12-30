@@ -15,10 +15,13 @@
 
 }
 
-.home-content p, a:visited {
-    color: black;
+.home-content p{
     font-size: clamp(12px, 1.5vw, 15.5px);
     width: 90%;
+}
+
+.home-content a {
+    color: inherit;
 }
 
 .home-content {
