@@ -15,7 +15,8 @@
 
 }
 
-.home-content p {
+.home-content p, p:visited {
+    color: black;
     font-size: clamp(12px, 1.5vw, 15.5px);
     width: 90%;
 }
