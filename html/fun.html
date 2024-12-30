@@ -19,7 +19,7 @@
 
     <main>
         <section class="chinese-stuff">
-            <h1>Watch my Chinese learning progress.</h1>
+            <h1>Watch me slowly get better at Chinese.</h1>
 
             <div class="learning-journey-section">
                 <div class="timeframes-column">
@@ -29,8 +29,8 @@
 
                     </button>
                     <button class="vid-2">
-                        <p class="date">Aug. 4th, 2018</p>
-                        <p>Seven months into my journey</p>
+                        <p class="date">Jul. 4th, 2018</p>
+                        <p>Six months into my journey</p>
 
                     </button>
                     <button class="vid-3">
@@ -41,24 +41,28 @@
 
                 </div>
 
-                <div class="vid"></div>
+                <div class="vid">
+
+                </div>
 
                 <script>
                     document.addEventListener("DOMContentLoaded", () => {
 
                         const videoMap = {
-                            "vid-1": "https://www.youtube.com/embed/LMuDrj5BpM0",
-                            "vid-2": "https://www.youtube.com/embed/8Bpj0vydr7A&ab",
-                            "vid-3": "https://www.youtube.com/embed/LMuDrj5BpM0",
+                            "vid-1": "https://www.youtube.com/embed/19msRkb6NCc",
+                            "vid-2": "https://www.youtube.com/embed/rFjpLUqCQ8k",
+                            "vid-3": "https://www.youtube.com/embed/YYtFrXM_yME",
                         };
                 
                         const videoDiv = document.querySelector(".vid");
                 
                         // Function to update the iframe
                         const updateVideo = (videoUrl) => {
+
                             // Create or update the iframe
                             videoDiv.innerHTML = `
                                 <iframe 
+                                    id="learning-chinese-vid"
                                     width="100%" 
                                     height="100%" 
                                     src="${videoUrl}" 
@@ -68,6 +72,8 @@
                                 </iframe>
                             `;
                         };
+
+                        updateVideo(videoMap["vid-1"]);
                 
                         // Add event listeners to buttons
                         document.querySelectorAll(".timeframes-column button").forEach(button => {
@@ -84,12 +90,18 @@
                     const buttons = document.querySelectorAll('.timeframes-column button');
                     
                     buttons.forEach(button => {
+
+                        //  The first video by default is the first one
+                        if (button.classList.contains("vid-1")) {
+                            button.classList.add('active'); 
+                        }
+
                         button.addEventListener('click', () => {
 
-                        // Remove the active class from all buttons
+                        // Refreshes all buttons by removing the active classs
                         buttons.forEach(btn => btn.classList.remove('active'));
 
-                        // Add the active class to the clicked button
+                        // Adds the active class to that specific button
                         button.classList.add('active');
                         });
                     });
@@ -104,7 +116,6 @@
                 </div>
 
                 <div class="col">
-
                     <h1>Chinese Lion Dance</h1>
 
                     <p>
@@ -137,6 +148,34 @@
                 
             </div>
 
+            <div class="chinese-rap-dance-row">
+                <div class="col">
+                    <div class="img-header">2019</div>
+                
+                <iframe 
+                    id="chinese-competition-vid"
+                    src="https://www.youtube.com/embed/m98UOlBAE08" 
+                    title="YouTube Shorts player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+
+                </div>
+
+                <div class="col">
+
+                    <h1>Chinese Speaking Competition</h1>
+
+                    <p>
+                        In this speaking competition, I gave a speech about my motivation and passion for 
+                        learning Mandarin Chinese.
+                    </p>
+                </div>
+
+                
+            </div>
+
         </section>
 
         <section class="fun-second-section">
@@ -164,15 +203,36 @@
                     ▢ Create <u>at least</u> 1 ML-related project.
                 </li>
                 <li>
-                    ▢ Move to NYC (unlikely, but fingers crossed) 
+                    ▢ Move to NYC (unlikely, but fingers crossed).
                 </li>
                 <li>
-                    ▢ Learn, practice, execute
+                    ▢ Learn from a mentor.
+                </li>
+                <li>
+                    ▢ Stay hungry, stay foolish.
                 </li>
             </ul>
         </section>
         <section class="learning-tools">
-            <h2>Resources I've used</h2>
+            <h2>Self-teach resources I've used</h2>
+            <ul class="show-decoration">
+                <li>
+                    freecodecamp.org
+                </li>
+                <li>
+                    boot.dev
+                </li>
+                <li>
+                    neetcode.io
+                </li>
+                <li>
+                    leetcode.com
+                </li>
+                <li>
+                    coursera.org - Data Structures and Algorithims Specialization
+                </li>
+
+            </ul>
         </section>
     </section>
     </main>

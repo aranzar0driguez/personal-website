@@ -22,7 +22,7 @@ shared-navbar .navdiv a {
 }
 .chinese-stuff {
     width: 100%;
-    height: auto;/*change this to auto*/
+    height: auto;
     background-color: var(--fun-background-color);
     padding-top: clamp(70px, 7.5vw, 80px);
     padding-left: 15vw;
@@ -102,12 +102,16 @@ shared-navbar .navdiv a {
     border: 1px solid white;
 }
 
-.chinese-rap-dance-row img {
+
+.chinese-rap-dance-row iframe {
+    width: 80%;
+    max-height: 250px;
+    aspect-ratio: 3 / 2;
+    object-fit: cover; 
+    border: 3px solid white;
     box-shadow: 10px 10px white;
     min-width: 300px;
-
 }
-
 
 .chinese-rap-dance-row {
     width: 100%;
@@ -142,17 +146,20 @@ shared-navbar .navdiv a {
 
 }
 
-.chinese-rap-dance-row img {
+.chinese-rap-dance-row img{
     width: 80%;
     max-height: 250px;
     aspect-ratio: 3 / 2;
     object-fit: cover; 
     border: 3px solid white;
+    box-shadow: 10px 10px white;
+    min-width: 300px;
 }
 
 .chinese-rap-dance-row p {
     height: 100%;
     color: white;
+    font-size: clamp(12px, 1.4vw, 16x);
 }
 
 @media (max-width: 713px) {
@@ -210,6 +217,9 @@ shared-navbar .navdiv a {
         width: 50%;
     }
 
+    .chinese-rap-dance-row iframe {
+        height: auto;
+    }
    .reversed {
     flex-direction: column-reverse;
    }
