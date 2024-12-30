@@ -3,9 +3,9 @@ class SharedNavbar extends HTMLElement {
         this.innerHTML = `
 
         <div class="navdiv">
-            <img class="logo" src="/images/alpacaCoding.png" alt="logo.png">
+            <a href="/index.html"><img class="logo" src="/images/alpacaCoding.png" alt="logo.png"></a>
             <ul>
-                <li><a href="#">About Me</a></li>
+                <li><a href="/index.html">About Me</a></li>
                 <li><a href="../html/projects.html">Projects</a></li>
                 <li><a href="../html/education.html">Education</a></li>
                 <li><a href="../html/fun.html">Fun</a></li>

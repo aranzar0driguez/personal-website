@@ -11,7 +11,7 @@ body {
     width: 100%;
     height: 100vh;
     overflow-x: hidden;
-    background-color: white;
+    background-color: black;
 }
 
 #projects-page {
@@ -192,6 +192,15 @@ shared-navbar .navdiv a {
 .marketing-cell p {
     font-size: clamp(12px, 1.3vw, 14px);
     height: 4rem;
+}
+
+.third-section {
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 10vh;
+    margin: 10px auto;
+    width: 100%;
 }
 
 @media (max-width: 550px){

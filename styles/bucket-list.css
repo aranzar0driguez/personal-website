@@ -5,6 +5,8 @@
     flex-direction: row;
     padding-bottom: 10vh;
     background-color: black;
+    --fun-background-color: rgb(112, 67, 103)
+
 
 }
     
@@ -44,6 +46,15 @@ h2 {
     color: white;
     font-size: clamp(14px, 1.5vw, 16x);
 
+}
+
+.footer {
+    width: 100%;
+    background-color: var(--fun-background-color);
+    height: 10vh;
+    text-align: center;
+    margin: 10px auto;
+    color: white;
 }
 
 @media (max-width: 713px) {

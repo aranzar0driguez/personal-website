@@ -44,7 +44,7 @@ shared-navbar .navdiv li {
     display: inline-block;
 }
 
-shared-navbar .navdiv a {
+shared-navbar .navdiv a, a:visited {
     color: black;
     text-decoration: none;
     margin-right: clamp(0px, 4vw, 50px);
@@ -54,7 +54,7 @@ shared-navbar .navdiv a {
     
 }
 
-shared-navbar .navdiv a:hover, .navdiv a.active {
+shared-navbar .navdiv li a:hover, .navdiv li a.active {
     color: white;
     border-bottom: 3px solid white;
 }
