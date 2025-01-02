@@ -75,7 +75,7 @@ shared-navbar .navdiv a {
     font-size: clamp(13px, 1.4vw, 16px);
 }
 
-.project-section u {
+.project-section u{
     color: white;
 }
 
